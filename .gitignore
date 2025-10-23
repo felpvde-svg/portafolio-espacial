@@ -23,6 +23,35 @@ npm-debug.log
 yarn-error.log
 
 # ============================================
+# AI WORKSPACES & CLOUD IDEs
+# ============================================
+
+# Claude AI workspace
+.claude/
+.claude-commands/
+
+# GitHub Copilot
+.copilot/
+
+# Cursor IDE
+.cursor/
+
+# Project IDX (Google)
+.idx/
+idx-*
+
+# Replit
+.replit
+replit.nix
+
+# CodeSandbox
+.codesandbox/
+
+# Gitpod
+.gitpod.yml
+.gitpod.dockerfile
+
+# ============================================
 # TYPESCRIPT
 # ============================================
 
