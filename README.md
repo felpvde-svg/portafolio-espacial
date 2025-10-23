@@ -1,4 +1,4 @@
-# 🌌 Portafolio Espacial - Felipe Jaramillo
+#  Portafolio Espacial - Felipe Jaramillo
 
 ![Angular](https://img.shields.io/badge/Angular-20.0.6-red?style=for-the-badge&logo=angular)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue?style=for-the-badge&logo=typescript)
@@ -126,7 +126,7 @@ El proyecto **supera los 6 componentes mínimos requeridos**, implementando un t
 
 ---
 
-#### 3️⃣ Splash Screen Component 🕳️
+#### 3️⃣ Splash Screen Component 
 **Ubicación:** `src/app/components/general/splash-screen/`
 
 **Características Destacadas:**
@@ -175,10 +175,9 @@ El proyecto **supera los 6 componentes mínimos requeridos**, implementando un t
 ```
 
 ---
+###  Componentes de Home (4 componentes)
 
-### 🏠 Componentes de Home (4 componentes)
-
-#### 5️⃣ Banner Component 🎥
+#### 5️⃣ Banner Component 
 **Ubicación:** `src/app/components/home/banner/`
 
 **Características Principales:**
@@ -238,7 +237,7 @@ propósito colectivo.
 
 ---
 
-#### 7️⃣ Pokemon Component 🔍
+#### 7️⃣ Pokemon Component 
 **Ubicación:** `src/app/components/home/pokemon/`
 
 **Características Principales:**
@@ -515,7 +514,7 @@ AOS.init({
 
 ---
 
-## 🌐 Internacionalización (i18n)
+##  Internacionalización (i18n)
 
 ### Idiomas Soportados
 - 🇪🇸 **Español** (por defecto)
@@ -600,7 +599,7 @@ changeLanguage(lang: 'es' | 'en') {
 
 
 
-# ⚙️ Servicios Desarrollados
+#  Servicios Desarrollados
 
 El proyecto implementa **7 servicios especializados** que gestionan la lógica de negocio y las operaciones de la aplicación.
 
@@ -746,11 +745,11 @@ getPokemonSpecies(id: number): Observable<any>
 
 ---
 
-## 📄 Páginas del Portafolio
+##  Páginas del Portafolio
 
 El proyecto incluye **5 páginas principales**, superando el requisito mínimo de 4 páginas.
 
-### 1️⃣ Home (/) 🏠
+### 1️⃣ Home (/) 
 **Ruta:** `/` o `/home`
 
 **Secciones incluidas:**
