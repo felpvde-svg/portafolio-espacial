@@ -1,0 +1,101 @@
+<nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='this.pageYPosition>0'>
+  <div class="container">
+    <a class="navbar-brand text-light" (click)="scroll('banner')">
+  <img src='assets/images/logo.png' width='200' />
+</a>
+
+    <ul ngbNav #nav="ngbNav" class="menu-ul">
+
+      <!-- SOBRE MÍ -->
+      <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
+        <a ngbNavLink (click)='scroll("about")'>
+          <span class='nav-number'></span>
+          <span class="underline nav-text">{{ "Header.Item1" | translate }}</span>
+        </a>
+      </li>
+
+      <!-- HABILIDADES -->
+    
+
+      <!-- POKÉMONES -->
+      <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_pokemons", "menu", "click")'>
+        <a ngbNavLink (click)='scroll("pokemon")'>
+          <span class='nav-number'></span>
+          <span class="underline nav-text">{{ "Header.Item3" | translate }}</span>
+        </a>
+      </li>
+
+      <!-- CONTACTO -->
+      <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+        <a ngbNavLink (click)='scroll("contact")'>
+          <span class='nav-number'></span>
+          <span class="underline nav-text">{{ "Header.Item4" | translate }}</span>
+        </a>
+      </li>
+
+      <!-- BOTÓN CV -->
+      <li ngbNavItem>
+        <app-dynamic-button
+          [text]="'Header.cvBtn' | translate"
+          (buttonClick)="downloadCV()"
+          variant="primary"
+          size="small"
+          analyticsEvent="click_cv"
+          analyticsCategory="menu"
+          analyticsLabel="cv_download">
+        </app-dynamic-button>
+      </li>
+
+      <!-- CAMBIO DE IDIOMA -->
+      <li>
+        <div ngbDropdown class="d-inline-block">
+          <div class="language-container" id="dropdownForm1" ngbDropdownToggle>
+            <img *ngIf='languageFormControl.value == "en"' width="20px" src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
+            <span *ngIf='languageFormControl.value == "en"' class="flag-text">English</span>
+
+            <img *ngIf='languageFormControl.value == "es"' width="20px" src="https://www.worldometers.info/img/flags/sp-flag.gif" alt="Español">
+            <span *ngIf='languageFormControl.value == "es"' class="flag-text">Español</span>
+            <svg class='arrow-language' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+            </svg>
+          </div>
+          <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+            <div (click)='changeLanguage("es")' class="language-container language-container-selector" [class.active]='languageFormControl.value == "es"'>
+              <img width="20px" src="https://www.worldometers.info/img/flags/sp-flag.gif" alt="Español">
+              <span class="flag-text">Español</span>
+            </div>
+            <div (click)='changeLanguage("en")' class="language-container language-container-selector" [class.active]='languageFormControl.value == "en"'>
+              <img width="20px" src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
+              <span class="flag-text">English</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="menu-wrapper">
+      <div [class.animate]='responsiveMenuVisible' (click)='responsiveMenuVisible = !responsiveMenuVisible' class="hamburger-menu"></div>
+    </div>
+
+    <!-- MENU RESPONSIVE -->
+    <div class="menu-responsive" [ngStyle]="{'pointer-events': !responsiveMenuVisible ? 'none' : '' }">
+      <aside [class.aside-show]='responsiveMenuVisible' [class.nav-shadow]='this.pageYPosition>0' class="on-top">
+        <nav>
+          <ol>
+            <li><a (click)='scroll("about")'>{{ "Header.Item1" | translate }}</a></li>
+            <li><a [routerLink]="['pokemon']">{{ "Header.Item3" | translate }}</a></li>
+            <li><a (click)='scroll("contact")'>{{ "Header.Item4" | translate }}</a></li>
+            <li>
+              <app-dynamic-button
+                [text]="'Header.cvBtn' | translate"
+                (buttonClick)="downloadCV()"
+                variant="primary"
+                size="small">
+              </app-dynamic-button>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+  </div>
+</nav>

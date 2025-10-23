@@ -1,0 +1,51 @@
+<!-- pokemon.component.html -->
+<div id="pokemon" class="pokemon-container">
+  <!-- todo tu contenido -->
+
+  <h2>Pokémon Explorer</h2>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      [(ngModel)]="searchName"
+      placeholder="Buscar Pokémon por nombre"
+    />
+    <input
+      type="number"
+      [(ngModel)]="limit"
+      min="1"
+      max="200"
+      placeholder="Cantidad"
+    />
+    <button (click)="searchPokemon()">Buscar</button>
+  </div>
+
+  <p class="error" *ngIf="error">{{ error }}</p>
+  <div *ngIf="loading" class="loading">Cargando Pokémons...</div>
+
+  <div class="pokemon-grid">
+    <div
+      *ngFor="let p of pokemons"
+      class="pokemon-card"
+      (click)="openPokemon(p)"
+    >
+      <img [src]="getPokemonImage(p.url)" alt="{{ p.name }}" />
+      <p>{{ p.name | titlecase }}</p>
+    </div>
+  </div>
+
+  <!-- 🧩 MODAL -->
+  <div class="modal" *ngIf="selectedPokemon" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeModal()">✕</button>
+
+      <img [src]="selectedPokemon.image" [alt]="selectedPokemon.name" />
+      <h3>{{ selectedPokemon.name | titlecase }}</h3>
+
+      <p class="types">
+        Tipos: <span *ngFor="let t of selectedPokemon.types">{{ t }} </span>
+      </p>
+      <p class="desc">{{ description }}</p>
+    </div>
+  </div>
+</div>

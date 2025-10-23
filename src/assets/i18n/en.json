@@ -1,0 +1,28 @@
+{
+  "Header.Item1": "About Me",
+  "Header.Item2": "Skills",
+  "Header.Item3": "Pokémon",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "CV_Felipe_Jaramillo_Arboleda .pdf",
+  "Loading": "Loading...",
+
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "Welcome to my portfolio! I am a student focused on programming, deeply fascinated by <span class='underline'>technology and the universe</span>. I am passionate about understanding the world and creating efficient solutions with a <span class='underline'>collective purpose</span>. Always <span class='underline'>driven by discovery and the advancement of the heart</span>.",
+
+  "Banner.ActionBtn": "Say Hi",
+
+  "AboutMe.Title": "About Me",
+  "AboutMe.Paragraphs": [
+    "Since I was young, I have been drawn to the world of <span class='underline'>technology</span> and how it can transform the way we live, work, and learn. This curiosity led me to explore <span class='underline'>programming</span> and discover the power of turning ideas into real solutions.",
+    "I am a <span class='underline'>disciplined</span> and consistent person, qualities I have strengthened through <span class='underline'>gym and calisthenics</span>. I firmly believe in daily effort, self-improvement, and continuous learning as the foundation of professional growth.",
+    "I am passionate about <span class='underline'>mathematics</span> and <span class='underline'>problem solving</span>, as they allow me to analyze and understand challenges with logic and creativity. These skills drive me to keep learning every day in my journey toward a degree in <span class='underline'>Systems Engineering</span>, a goal I am determined to achieve with excellence.",
+    "I have developed small projects using <span class='underline'>PHP</span>, including an institutional website and other simple yet efficient practices that have helped me strengthen my knowledge in web development and clean coding principles.",
+    "I aspire to continue growing in the technological field and contribute with innovative solutions that make a real impact. For this reason, opportunities like the <span class='underline'>Quipux Scholarship</span> represent a key step for me to keep advancing my education and contribute to my country’s technological development."
+  ],
+
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "Say Hi!",
+  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
+  "Contact.Btn": "Contact Me"
+}

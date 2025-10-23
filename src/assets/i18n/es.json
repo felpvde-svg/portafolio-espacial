@@ -1,0 +1,28 @@
+{
+  "Header.Item1": "Acerca de mí",
+  "Header.Item2": "Habilidades",
+  "Header.Item3": "Pokémon",
+  "Header.Item4": "Contacto",
+  "Header.cvBtn": "Currículum",
+  "Header.cvName": "CV_Felipe_Jaramillo_Arboleda .pdf",
+  "Loading": "Cargando...",
+
+  "Banner.Pretitle": "¡Hola! Mi nombre es",
+  "Banner.Description": "¡Bienvenido a mi portafolio! Soy un estudiante enfocado en la programación, profundamente fascinado por <span class='underline'>la tecnología y el universo</span>. Me apasiona entender el mundo y crear soluciones eficientes con un <span class='underline'>propósito colectivo</span>. Siempre <span class='underline'>impulsado por el descubrimiento y el avance del corazón</span>.",
+
+  "Banner.ActionBtn": "Salúdame",
+
+  "AboutMe.Title": "Acerca de mí",
+  "AboutMe.Paragraphs": [
+    "Desde pequeño me ha atraído el mundo de la <span class='underline'>tecnología</span> y cómo esta puede cambiar la manera en que vivimos, trabajamos y aprendemos. Esa curiosidad me llevó a interesarme por la <span class='underline'>programación</span> y a descubrir el poder de crear soluciones a partir de ideas.",
+    "Soy una persona <span class='underline'>disciplinada</span> y constante, cualidades que he fortalecido a través del <span class='underline'>gym y la calistenia</span>. Creo firmemente en el esfuerzo diario, la superación personal y el aprendizaje continuo como pilares del crecimiento profesional.",
+    "Me apasionan las <span class='underline'>matemáticas</span> y la <span class='underline'>resolución de problemas</span>, ya que me permiten analizar y comprender los desafíos con lógica y creatividad. Estas habilidades son las que me impulsan a seguir aprendiendo cada día en el camino de la <span class='underline'>ingeniería en sistemas</span>, carrera que aspiro culminar con excelencia.",
+    "He desarrollado pequeños proyectos con <span class='underline'>PHP</span>, incluyendo una página institucional y otras prácticas simples pero eficientes, que me han permitido afianzar mis conocimientos en desarrollo web y buenas prácticas de programación.",
+    "Aspiro a seguir creciendo en el campo tecnológico y poder contribuir con soluciones innovadoras que generen impacto. Por eso, oportunidades como la <span class='underline'>beca Quipux</span> representan para mí un paso fundamental para continuar mi formación y aportar al desarrollo tecnológico de mi entorno."
+  ],
+
+  "Contact.Pretitle": "Y... ¿Ahora?",
+  "Contact.Title": "¡Salúdame!",
+  "Contact.Content": "Estaré encantado de recibir tu contacto si quieres conversar acerca de nuevas oportunidades. Escríbeme, y te responderé tan pronto como vea tu mensaje.",
+  "Contact.Btn": "Contáctame"
+}
